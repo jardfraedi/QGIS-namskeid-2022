@@ -1,80 +1,117 @@
 <html>
     <head>
-<style>
-.container {
-    xmin-width: 900px;
-}
+		<style>
 
-.wrapper {
-    position: relative;
-    overflow: auto;
-}
 
-#top {
-    position: absolute;
-  	top: 0;
-	left: 0;
-	text-align: center;
-	background-color: #9c963e;
-	width: 100%;
-	padding: 15px 0;
-	font-family: Verdana, sans-serif;
-    color: aliceblue;
-}
-#main {
-	font-family: monospace;
-	background-color: snow;
-	padding: 10px;
-    margin: 160 20 0 20px;
-	/*overflow: auto;*/
-}
-
-</style>
-</head>
-
-<body>
-    <div id="top">
-        <h1>QGIS námskeið innanhús NÍ</h1>
-    </div>
-<div class="container wrapper">
-	<div id="main">
-		<h2>
-			Kafla 1: Intro to QGIS
-		</h2>
-		<p>
-		<ul>
-			<li>Why use QGIS and how does it compare to ArcMap?</li>
-			<li>Layout of QGIS and setting up the viewport.</li>
-		</ul>
-		</p>
-		<p>
-			<a>Video link</a>
-		</p>
-
-		<h2>Kafla 2: How to set up a project</h2>
-		<ul>
-			<li>Using CRS</li>
-			<li>Connecting WMS and WFS, using other online maps</li>
-			<li>Creating a basemap</li>
-			<li>Creating a geopackage database or series of shapefiles?</li>
-		</ul>
-		<p>
-			<a>Video link</a>
-		</p>
-
-		<h2>Kafla 3: Importing and creating data</h2>
-		<ul>
-			<li>Import csv file to create a point shp</li>
-			<li>Import shapefiles</li>
-			<li>Create or edit shapefiles</li>
-			<li>Edit and use tables</li>
-		</ul>
-		<p>
-			<a>Video link</a>
-		</p>
-
-	</div>
-</div>
+			.top {
+				
+				text-align: center;
+				background-color: #9c963e;
+				width: 100%;
+				padding: 15px 0;
+				font-family: Verdana, sans-serif;
+				color: aliceblue;
+			}
+			#main {
+				font-family: monospace;
+				background-color: snow;
+				padding: 10px;
+				margin: 160 20 0 400px;
+				/*overflow: auto;*/
+			}
+			
+			</style>
+			
+			<style>
+			* {
+			  box-sizing: border-box;
+			}
+			
+			body {
+			  margin: 0;
+			}
+			
+			
+			.column {
+			  float: left;
+			  padding: 10px;
+			}
+			
+			/* Left and right column */
+			.column.side {
+			  width: 25%;
+			  
+			}
+			
+			/* Middle column */
+			.column.main {
+			  width: 75%;
+			  font-family: monospace;
+				background-color: snow;
+				padding: 10px;
+			}
+			
+			/* Clear floats after the columns */
+			.row:after {
+			  content: "";
+			  display: table;
+			  clear: both;
+			}
+			
+			/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+			@media screen and (max-width: 600px) {
+			  .column.side, .column.main {
+				width: 100%;
+			  }
+			}
+			</style>
+			
+	</head>
+			
+	<body>
+			<div class="top">
+				<h1>QGIS námskeið innanhús NÍ</h1>
+			</div>
+			
+		<div class="column main">
+			<h2>
+				Kafla 1: Intro to QGIS
+			</h2>
+			<p>
+				<ul>
+					<li>Why use QGIS and how does it compare to ArcMap?</li>
+					<li>Layout of QGIS and setting up the viewport.</li>
+				</ul>
+			</p>
+			<p>
+				<a>Video link</a>
+			</p>
+			
+			<h2>Kafla 2: How to set up a project</h2>
+				<ul>
+					<li>Using CRS</li>
+					<li>Connecting WMS and WFS, using other online maps</li>
+					<li>Creating a basemap</li>
+					<li>Creating a geopackage database or series of shapefiles?</li>
+				</ul>
+				<p>
+					<a>Video link</a>
+				</p>
+			
+			<h2>Kafla 3: Importing and creating data</h2>
+				<ul>
+					<li>Import csv file to create a point shp</li>
+					<li>Import shapefiles</li>
+					<li>Create or edit shapefiles</li>
+					<li>Edit and use tables</li>
+				</ul>
+			<p>
+				<a>Video link</a>
+			</p>
+		</div>
+		
+		<div class="column side">
+				hello world
+		</div>
 </body>
-
 </html>
