@@ -66,6 +66,11 @@
 				width: 100%;
 			  }
 			}
+
+			/* link style - underline appears on hover*/
+			a.line:link {color:#ff0000;text-decoration:none;}
+			a.line:visited {color:#0000ff;text-decoration:none;}
+			a.line:hover {text-decoration:underline;}
 			</style>
 			
 	</head>
@@ -113,7 +118,14 @@
 		</div>
 		
 		<div class="column side">
-				hello world
+			<h3>Further links:</h3>
+			<ul list-style-type:"none">
+				<li><a class="line" href="https://qgis.org/en/site/" target="_blank">QGIS homepage</a></li>
+				<li><a class="line" href="https://docs.qgis.org/3.22/en/docs/training_manual/" target="_blank">QGIS training manual</a></li>
+				<li><a class="line" href="https://docs.qgis.org/3.22/en/docs/gentle_gis_introduction/" target="_blank">Introduction to QGIS</a></li>
+				<li><a class="line" href="https://kevelyn1.github.io/QGIS-Intro/" target="_blank">QGIS tutorials</a></li>
+			</ul>
+
 		</div>
 </body>
 </html>
